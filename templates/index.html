@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<h1> Employee Database</h1>
+<div class = "container" >
+      <form action="/submit" method="post">
+      <label for="eid">Employee id</label>
+      <input type="text" id="eid" name="eid"  required>
+   
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"  required>
+   
+      <label for="email">Email</label>
+      <input id="email" name="email" required>
+   
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department"  required>
+   
+      <label for="manager">Manager:</label>
+      <input type="text" id="manager" name="manager"  required>
+
+      <label for="photo">Upload Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+
+      <button type="submit" value="submit">Submit</button>
+    </form>
+
+</div>
+</body>
+</html>
